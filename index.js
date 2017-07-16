@@ -25,7 +25,6 @@ module.exports = {
       'error',
       '1tbs'
     ],
-    'capitalized-comments': 'warn',
     'default-case': [
       'error'
     ],
@@ -71,7 +70,8 @@ module.exports = {
       'error',
       {
         afterBlockComment: true,
-        afterLineComment: true
+        beforeBlockComment: true,
+        beforeLineComment: true
       }
     ],
     'no-const-assign': 'error',
