@@ -79,7 +79,13 @@ module.exports = {
     'no-path-concat': 'error',
     'no-plusplus': 'error',
     'no-set-state': 'off',
-    'no-unused-vars': 'warn',
+    'no-unused-vars': [
+      'warn',
+      {
+        vars: 'local',
+        varsIgnorePattern: 'React'
+      }
+    ],
     'prefer-const': 'error',
     'prefer-promise-reject-errors': [
       'warn'
